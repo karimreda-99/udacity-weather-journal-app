@@ -1,0 +1,192 @@
+body {
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    text-align: left;
+}
+
+#app {
+    display: inline-block;
+    grid-auto-rows: minmax(150px, auto);
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.entry {
+    background: silver;
+    display: inline-flex;
+    color: white;
+    height: 100px;
+    width: 500px;
+}
+
+#generate {
+    color: #fff;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+#generate:hover {
+    background-color: aqua;
+    color: #fff;
+}
+
+#entryHolder {
+    align-self: center;
+}
+
+#date {
+    color: #000;
+}
+
+#temp {
+    color: #000;
+}
+
+#content {
+    color: #000;
+}
+
+.zip {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+#zip {
+    margin-top: 2vh;
+    width: 99%;
+}
+
+.feel {
+    margin-top: 5vh;
+}
+
+.headline {
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+    background-color: #fff;
+}
+
+.title {
+    align-items: center;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+label {
+    display: inline-block;
+    font-size: 27px;
+}
+
+.entryGroup {
+    display: flex;
+}
+
+input {
+    display: block;
+    height: 60px;
+    width: 320px;
+    background: #3b4a6b;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+.myInput {
+    height: 15vh;
+    margin-top: 1vh;
+}
+
+button {
+    width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #3b4a6b;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Style for Placeholder Text*/
+
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media(min-width:600px) {
+    body {
+        text-align: center;
+    }
+    .headline {
+        font-size: 3em;
+    }
+    .myInput {
+        height: 40vh;
+        margin-top: 1vh;
+    }
+    #app {
+        grid-template-columns: 35% 60%;
+        justify-content: center;
+        grid-template-areas: "left middle middle";
+    }
+    .entry {
+        margin-top: 3vh;
+        grid-area: left;
+    }
+    .zip {
+        grid-area: middle;
+    }
+    .feel {
+        grid-area: middle;
+    }
+}

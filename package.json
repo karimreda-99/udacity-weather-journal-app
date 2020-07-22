@@ -1,0 +1,17 @@
+{
+  "name": "weathe-journal-app",
+  "version": "1.0.0",
+  "description": "This project was implemented to simulate **a personal website** to show **my area Weather** and it can be used by anyone to benefit from it and is programmed by `Karim Reda`.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
